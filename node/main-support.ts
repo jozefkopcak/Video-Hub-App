@@ -303,7 +303,7 @@ function getBestStream(metadata) {
  */
 function getFileDuration(metadata): number {
   if (metadata?.streams?.[0]?.duration) {
-    
+
     return metadata.streams[0].duration;
 
   } else if (metadata?.format?.duration) {
@@ -314,11 +314,11 @@ function getFileDuration(metadata): number {
   }
 }
 
-//Calculation of video bitrate in mb/s
+// Calculation of video bitrate in mb/s
 
-function getBitrate(fileSize,duration){
-  var bitrate = ((fileSize/1000)/duration)/1000;
-  return Math.round(bitrate*100)/100;
+function getBitrate(fileSize, duration) {
+  const bitrate = ((fileSize / 1000) / duration) / 1000;
+  return Math.round(bitrate * 100) / 100;
 }
 
 /**
@@ -353,7 +353,7 @@ function getBitrate(fileSize,duration){
 function computeNumberOfScreenshots(screenshotSettings: ScreenshotSettings, duration: number): number {
   let total: number;
 
-  // fixed or per minute
+  // fixed or per minute  s
   if (screenshotSettings.fixed) {
     total = screenshotSettings.n;
   } else {
