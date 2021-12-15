@@ -53,6 +53,7 @@
     "fdir": "5.1.0",
     "ffmpeg-static": "4.4.0",
     "fuse.js": "6.4.6",
+    "grunt": "^1.4.1",
     "ip": "1.1.5",
     "natural-orderby": "2.0.3",
     "ngx-virtual-scroller": "4.0.3",
