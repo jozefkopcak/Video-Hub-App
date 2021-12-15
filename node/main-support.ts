@@ -353,7 +353,7 @@ function getBitrate(fileSize, duration) {
 function computeNumberOfScreenshots(screenshotSettings: ScreenshotSettings, duration: number): number {
   let total: number;
 
-  // fixed or per minutes
+  // fixed or per minutesx
   if (screenshotSettings.fixed) {
     total = screenshotSettings.n;
   } else {
